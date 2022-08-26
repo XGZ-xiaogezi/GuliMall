@@ -4,10 +4,937 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="858a0a0b-4a8b-4fa6-b411-81565831ec0e" name="变更" comment="fix():删除无关文件夹">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="858a0a0b-4a8b-4fa6-b411-81565831ec0e" name="变更" comment="feat():逆向生成CRUD">
+      <change afterPath="$PROJECT_DIR$/guli-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/ConfigConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/HttpContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/IPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/MapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/RedisKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/utils/SpringContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/ValidatorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/AddGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/AliyunGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/QcloudGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/QiniuGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/validator/group/UpdateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/xss/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/xss/SQLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/xss/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-common/src/main/java/com/common/xss/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/CouponController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/CouponHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/CouponSpuCategoryRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/CouponSpuRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/HomeAdvController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/HomeSubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/HomeSubjectSpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/MemberPriceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/SeckillPromotionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/controller/SeckillSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/CouponDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/CouponHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/CouponSpuCategoryRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/CouponSpuRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/HomeAdvDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/HomeSubjectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/HomeSubjectSpuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/MemberPriceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/SeckillPromotionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/dao/SeckillSessionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/CouponEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/CouponHistoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/CouponSpuCategoryRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/CouponSpuRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/HomeAdvEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/HomeSubjectEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/HomeSubjectSpuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/MemberPriceEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/SeckillPromotionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/entity/SeckillSessionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/CouponHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/CouponService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/CouponSpuCategoryRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/CouponSpuRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/HomeAdvService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/HomeSubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/HomeSubjectSpuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/MemberPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/SeckillPromotionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/SeckillSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/CouponHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/CouponServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/CouponSpuCategoryRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/CouponSpuRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/HomeAdvServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/HomeSubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/HomeSubjectSpuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/MemberPriceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/SeckillPromotionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/service/impl/SeckillSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/CouponDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/CouponHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/CouponSpuCategoryRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/CouponSpuRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/HomeAdvDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/HomeSubjectDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/HomeSubjectSpuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/MemberPriceDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/SeckillPromotionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/mapper/coupon/SeckillSessionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/coupon-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/coupon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponhistory-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponhistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponspucategoryrelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponspucategoryrelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponspurelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/couponspurelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homeadv-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homeadv.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homesubject-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homesubject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homesubjectspu-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/homesubjectspu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/memberprice-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/memberprice.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/seckillpromotion-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/seckillpromotion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/seckillsession-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-coupon/src/main/resources/src/views/modules/coupon/seckillsession.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/GrowthChangeHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/IntegrationChangeHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberCollectSpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberCollectSubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberLoginLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberReceiveAddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/controller/MemberStatisticsInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/GrowthChangeHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/IntegrationChangeHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberCollectSpuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberCollectSubjectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberLevelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberLoginLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberReceiveAddressDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/dao/MemberStatisticsInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/GrowthChangeHistoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/IntegrationChangeHistoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberCollectSpuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberCollectSubjectEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberLevelEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberLoginLogEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberReceiveAddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/entity/MemberStatisticsInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/GrowthChangeHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/IntegrationChangeHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberCollectSpuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberCollectSubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberLevelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberLoginLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberReceiveAddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/MemberStatisticsInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/GrowthChangeHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/IntegrationChangeHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberCollectSpuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberCollectSubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberLevelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberLoginLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberReceiveAddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/service/impl/MemberStatisticsInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/GrowthChangeHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/IntegrationChangeHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberCollectSpuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberCollectSubjectDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberLevelDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberLoginLogDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberReceiveAddressDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/mapper/member/MemberStatisticsInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/growthchangehistory-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/growthchangehistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/integrationchangehistory-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/integrationchangehistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/member-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/member.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/membercollectspu-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/membercollectspu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/membercollectsubject-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/membercollectsubject.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberlevel-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberlevel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberloginlog-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberloginlog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberreceiveaddress-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberreceiveaddress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberstatisticsinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-member/src/main/resources/src/views/modules/member/memberstatisticsinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/GuliOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderOperateHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderReturnApplyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderReturnReasonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/OrderSettingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/PaymentInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/controller/RefundInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderOperateHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderReturnApplyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderReturnReasonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/OrderSettingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/PaymentInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/dao/RefundInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderOperateHistoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderReturnApplyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderReturnReasonEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/OrderSettingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/PaymentInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/entity/RefundInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderOperateHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderReturnApplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderReturnReasonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/OrderSettingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/PaymentInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/RefundInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderOperateHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderReturnApplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderReturnReasonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/OrderSettingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/PaymentInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/java/com/gulimall/order/service/impl/RefundInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderItemDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderOperateHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderReturnApplyDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderReturnReasonDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/OrderSettingDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/PaymentInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/mapper/order/RefundInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/order-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/order.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderitem-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderitem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderoperatehistory-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderoperatehistory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderreturnapply-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderreturnapply.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderreturnreason-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/orderreturnreason.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/ordersetting-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/ordersetting.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/paymentinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/paymentinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/refundinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-order/src/main/resources/src/views/modules/order/refundinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/AttrAttrgroupRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/AttrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/AttrGroupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/CategoryBrandRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/CommentReplayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/ProductAttrValueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/SkuImagesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/controller/SkuInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/AttrAttrgroupRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/AttrDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/AttrGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/BrandDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/CategoryBrandRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/CommentReplayDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/ProductAttrValueDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/SkuImagesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/dao/SkuInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/AttrAttrgroupRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/AttrEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/AttrGroupEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/BrandEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/CategoryBrandRelationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/CategoryEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/CommentReplayEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/ProductAttrValueEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/SkuImagesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/entity/SkuInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/AttrAttrgroupRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/AttrGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/AttrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/CategoryBrandRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/CommentReplayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/ProductAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/SkuImagesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/SkuInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/AttrAttrgroupRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/AttrGroupServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/AttrServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/CategoryBrandRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/CommentReplayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/ProductAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/SkuImagesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/java/com/gulimall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/AttrAttrgroupRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/AttrDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/AttrGroupDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/BrandDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/CategoryBrandRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/CategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/CommentReplayDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/ProductAttrValueDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/SkuImagesDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/mapper/product/SkuInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attr-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attr.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attrattrgrouprelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attrattrgrouprelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attrgroup-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/attrgroup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/brand-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/brand.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/category-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/categorybrandrelation-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/categorybrandrelation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/commentreplay-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/commentreplay.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/productattrvalue-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/productattrvalue.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/skuimages-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/skuimages.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/skuinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-product/src/main/resources/src/views/modules/product/skuinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/PurchaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/PurchaseDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/UndoLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/WareInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/WareOrderTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/WareOrderTaskDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/controller/WareSkuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/PurchaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/PurchaseDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/UndoLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/WareInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/WareOrderTaskDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/WareOrderTaskDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/dao/WareSkuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/PurchaseDetailEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/PurchaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/UndoLogEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/WareInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/WareOrderTaskDetailEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/WareOrderTaskEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/entity/WareSkuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/PurchaseDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/PurchaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/UndoLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/WareInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/WareOrderTaskDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/WareOrderTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/WareSkuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/PurchaseDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/PurchaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/UndoLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/WareInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/WareOrderTaskDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/WareOrderTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/java/com/gulimall/ware/service/impl/WareSkuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/PurchaseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/PurchaseDetailDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/UndoLogDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/WareInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/WareOrderTaskDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/WareOrderTaskDetailDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/mapper/ware/WareSkuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/purchase-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/purchase.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/purchasedetail-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/purchasedetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/undolog-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/undolog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareinfo-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareinfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareordertask-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareordertask.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareordertaskdetail-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/wareordertaskdetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/waresku-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guli-ware/src/main/resources/src/views/modules/ware/waresku.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/build/webpack.test.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/config/test.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/demo-screenshot/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/demo-screenshot/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/img/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/scss/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/scss/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/assets/scss/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/components/icon-svg/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/components/table-tree-column/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#0BB2D4/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#0BB2D4/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#0BB2D4/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#11C26D/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#11C26D/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#11C26D/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#17B3A3/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#17B3A3/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#17B3A3/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#3E8EF7/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#3E8EF7/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#3E8EF7/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#667AFA/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#667AFA/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#667AFA/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#757575/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#757575/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#757575/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#9463F7/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#9463F7/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#9463F7/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#997B71/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#997B71/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#997B71/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#EB6709/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#EB6709/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#EB6709/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#F74584/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#F74584/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#F74584/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FCB900/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FCB900/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FCB900/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FF4C52/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FF4C52/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/element-#FF4C52/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui-theme/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/element-ui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-admin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-bianji.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-config.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-dangdifill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-daohang.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-duanxin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-editor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-geren.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-jiesuo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-job.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-log.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-mudedi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-oss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-pinglun.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-role.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-shanchu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-shezhi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-shoucang.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-shoucangfill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-shouye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-sousuo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-sql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-suoding.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-system.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-tixing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-tubiao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-xiangqu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-xiangqufill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-zhedie.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/icons/svg/icon-zonghe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/job-schedule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/oss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/sys-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/sys-log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/sys-menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/sys-role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/mock/modules/sys-user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/router/import-development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/router/import-production.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/store/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/store/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/utils/httpRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/utils/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/common/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/common/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/common/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/common/theme.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/demo/echarts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/demo/ueditor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main-content.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main-navbar-update-password.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main-navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main-sidebar-sub-menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main-sidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/job/schedule-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/job/schedule-log.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/job/schedule.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/oss/oss-config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/oss/oss-upload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/oss/oss.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/config-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/log.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/menu-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/role-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/role.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/user-add-or-update.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/src/views/modules/sys/user.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/config/index-prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/config/index-qa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/config/index-uat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/config/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/echarts-3.8.5/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/mock-1.0.0-beta3/mock-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/internal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/themes/iframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/xss.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/ueditor.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/static/plugins/ueditor-1.4.3.3/ueditor.parse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/e2e/nightwatch.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/e2e/runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/e2e/specs/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/unit/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/unit/jest.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/unit/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast-vue/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/RenrenApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/adaptor/MongoTableInfoAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/config/DbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/config/MongoCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/config/MongoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/config/MongoManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/config/MongoNullCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/controller/SysGeneratorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/GeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/MongoDBGeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/MySQLGeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/OracleGeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/PostgreSQLGeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/dao/SQLServerGeneratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/entity/ColumnEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/entity/TableEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/entity/mongo/MongoDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/entity/mongo/MongoGeneratorEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/entity/mongo/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/factory/MongoDBCollectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/service/SysGeneratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/GenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/MongoScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/RRException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/java/io/renren/utils/RRExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/generator.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/mapper/MySQLGeneratorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/mapper/OracleGeneratorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/mapper/PostgreSQLGeneratorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/mapper/SQLServerGeneratorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/css/all-skins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/js/generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/fastclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/libs/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/jqgrid/grid.locale-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/jqgrid/jquery.jqGrid.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid-bootstrap-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid-bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/moon/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/static/plugins/layer/skin/moon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Dao.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Dao.xml.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Entity.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/MongoChildrenEntity.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/MongoEntity.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/Service.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/ServiceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/add-or-update.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/template/menu.sql.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/views/generator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/views/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-generator/src/test/java/io/renren/RenrenApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guli-coupon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gilimall/coupon/GuliCouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guli-coupon/src/main/java/com/gulimall/coupon/GuliCouponApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guli-member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-member/src/main/java/com/gilimall/member/GuliMemberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guli-member/src/main/java/com/gulimall/member/GuliMemberApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guli-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-order/src/main/java/com/gilimall/order/GuliOrderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guli-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-ware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guli-ware/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-ware/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guli-ware/target/classes/com/gulimall/ware/GuliWareApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +942,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -27,30 +959,45 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2DpfyrtclCJbOvUDzaQJywJBVve" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yisa/Desktop/itp-protocol-provider",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "c4df79ec6a0ab4197d975c45f0350a61",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/code/guli-mall/guli-common/src/main/java/com/common",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "8fe82aed21bcd851b95039d7274de155",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\guli-mall\guli-common\src\main\java\com\common" />
+      <recent name="E:\code\guli-mall\guli-common\src\main\java\com\common\utils" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -58,10 +1005,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GuliWareApplication">
+  <component name="RunManager" selected="Spring Boot.RenrenGeneratorApplication">
     <configuration name="GuliCouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="guli-coupon" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gilimall.coupon.GuliCouponApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gulimall.coupon.GuliCouponApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,14 +1017,15 @@
     <configuration name="GuliMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="guli-member" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gilimall.member.GuliMemberApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gulimall.member.GuliMemberApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="GuliOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="guli-order" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gilimall.order.GuliOrderApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gulimall.order.GuliOrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,15 +1046,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="RenrenFastApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="renren-fast" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RenrenGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="renren-generator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/renren-fast-vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.RenrenApplication" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.RenrenGeneratorApplication" />
+      <item itemvalue="Spring Boot.RenrenFastApplication" />
       <item itemvalue="Spring Boot.GuliWareApplication" />
       <item itemvalue="Spring Boot.GuliProductApplication" />
       <item itemvalue="Spring Boot.GuliMemberApplication" />
@@ -123,7 +1093,9 @@
       <updated>1661401206310</updated>
       <workItem from="1661401208531" duration="622000" />
       <workItem from="1661408724496" duration="1736000" />
-      <workItem from="1661410481507" duration="3601000" />
+      <workItem from="1661410481507" duration="4331000" />
+      <workItem from="1661424474818" duration="6000" />
+      <workItem from="1661476129438" duration="8078000" />
     </task>
     <task id="LOCAL-00001" summary="feat():微服务初始化">
       <created>1661410751892</created>
@@ -132,7 +1104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661410751892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat():项目初始化">
+      <created>1661417079051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661417079051</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,10 +1129,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="feat():微服务初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat():微服务初始化" />
+    <MESSAGE value="feat():项目初始化" />
+    <MESSAGE value="feat():逆向生成CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat():逆向生成CRUD" />
   </component>
 </project>

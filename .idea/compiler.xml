@@ -9,9 +9,11 @@
         <module name="guli-order" />
         <module name="guli-coupon" />
         <module name="guli-product" />
-        <module name="renren-fast" />
         <module name="guli-member" />
+        <module name="renren-fast" />
+        <module name="guli-common" />
         <module name="guli-ware" />
+        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +25,7 @@
       <module name="guli-product" options="-parameters" />
       <module name="guli-ware" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
     </option>
   </component>
 </project>
